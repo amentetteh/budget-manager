@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+
+
+ .centered-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 100px);
+  }
+
+ .centered-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+
+  margin: 0 auto;
+}
+
+.field {
+    width: 90%;
+}
+
+.new_user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  margin-top: 10px;
+  height: 30px;
+}
