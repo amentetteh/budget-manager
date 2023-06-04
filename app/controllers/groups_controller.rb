@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class GroupsController < ApplicationController
   before_action :set_user
 
@@ -11,7 +13,7 @@ class GroupsController < ApplicationController
 
   def create
     @group = Group.new(group_params)
-    @group.user = @user
+    @group.author = @user
     if @group.save
       redirect_to groups_path, notice: 'Category added successfully'
     else
