@@ -6,16 +6,16 @@
   <% @groups.each do |group| %>
     <ul>
       <li class="card">
-        <%= link_to group_path(group), class: "flex-row" do %>
-          <div class="image">
+        <%= link_to group_path(group), class: "card-row" do %>
+          <div class="card-left">
             <% if group.icon.attached?%>
               <%= image_tag(group.icon) %>
             <%else%>
               <%= image_tag('group.png') %>
             <%end%>
           </div>
-          <div class="info">
-            <div class="name-amount">
+          <div class="card-right">
+            <div class="card-right-content">
               <h3><%= group.name %></h3>
               <h3>$<%= group.expenses.sum(:amount) %></h3>
             </div>
