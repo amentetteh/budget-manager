@@ -3,7 +3,7 @@
 <%= render 'shared/flash' %>
 
 <%= form_with model: @group, url: groups_path, local: true, class: 'form' do |f| %>
-  <%= f.text_field :name, autofocus: true, placeholder: "Category Name", class: "form-field" %>
+  <%= f.text_field :name, autofocus: true, placeholder: "Category Name", class: "field" %>
   <div class="checkbox-btn">
     <%= f.file_field :icon %>
     <%= f.submit "Save", class: "welcome-login btn" %>
