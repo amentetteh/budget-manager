@@ -24,7 +24,7 @@ class GroupsController < ApplicationController
 
   def show
     @group = Group.find(params[:id])
-    redirect_to groups_path, notice: 'You are not authorized to access this page!' unless @group.user == @user
+    redirect_to groups_path, notice: 'You are not authorized to access this page!' unless @group.author == @user
     @expenses = @group.expenses.order(created_at: :desc)
     @total = @expenses.sum(:amount)
   end
