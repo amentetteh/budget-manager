@@ -12,11 +12,11 @@
   </div>
 
   <div class="field">
-    <%= f.password_field :password, placeholder: "Password (#{@minimum_password_length} characters minimum)", autocomplete: "new-password" %>
+    <%= f.password_field :password, placeholder: "Password (#{@minimum_password_length} characters minimum)", placeholder: "Name",autocomplete: "new-password" %>
   </div>
 
   <div class="field">
-    <%= f.password_field :password_confirmation, placeholder: :password_confirmation, autocomplete: "new-password" %>
+    <%= f.password_field :password_confirmation, placeholder: :password_confirmation,placeholder: "Email", autocomplete: "new-password" %>
   </div>
 
   <div class="actions">
