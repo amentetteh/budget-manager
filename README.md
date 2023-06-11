@@ -62,7 +62,7 @@ Budget App is a mobile web application where you can manage your budget: there i
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://mysite-6p3h.onrender.com)
+- [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -83,7 +83,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```
-  git clone https://github.com/AbeeraTahir/Budget-App.git
+  git clone https://github.com/amentetteh/budget-manager.git
 ```
 
 ### Install
