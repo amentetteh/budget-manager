@@ -20,7 +20,6 @@ RSpec.describe 'Log in page', type: :system do
       expect(page).to have_button('Log in')
     end
 
-
     it 'Successfully logs in with correct credentials' do
       fill_in 'Email', with: 'user@example.com'
       fill_in 'Password', with: 'password'
