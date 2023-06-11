@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
   subject do
     @not_valid_user = User.new
-    subject = User.create(name: 'Amen', email: 'tkamen@outlook.com', password: '123456')
+    User.create(name: 'Amen', email: 'tkamen@outlook.com', password: '123456')
   end
 
   before { subject.save }

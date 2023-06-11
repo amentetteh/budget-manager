@@ -46,5 +46,4 @@ RSpec.describe Expense, type: :model do
     subject.amount = -1.0
     expect(subject).to_not be_valid
   end
-
 end
